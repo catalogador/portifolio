@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weslley/Portifolio</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> 
+        <a href = "#" class="logo"> Portifolio Weslley</a>
+
+        <ul class="nav-list"> 
+            <li>
+                <a href="https://www.linkedin.com/in/weslleypolo/"target="_blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/catalogador"target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="#"target="_blank">Steam</a>
+            </li>
+
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+
+    </header>
+
+    <section class="material"> 
+        <div class="text-material"> 
+            <h5> Sobre mim</h5>
+            
+            <h1> Habilidades em <br><span class="multitext">Python</span></h1>
+            <p>Meu nome é weslley, tenho 22 anos, cursando Ciencia da computação e trabalho como freelancer frontend, estudo algumas outras tecnologias, meus projetos se encontram no Github.
+                    </p>
+            <a href="mailto:polontra@gmail.com?subject = Feedback&body = Message" target="_blank">Email</a>
+            <a href="https://wa.me/5511930346946" class="ctaa" target="_blank"><i class="ri-play-fill"></i>WhatsApp</a>
+            
+        </div>
+
+
+
+
+        <div class="box-right"> 
+            <div class="box-material">
+                <div class="slider">
+                <img id="slide1" src="/misc/3637cce4-2243-4e80-8e1a-bee460f26784-cover.png">
+                <img id="slide2" src="/misc/3637cce4-2243-4e80-8e1a-bee460f26784-cover.png">
+                <img id="slide3" src="/misc/3637cce4-2243-4e80-8e1a-bee460f26784-cover.png">
+                </div>
+            </div>
+
+            <div class="arrowskip">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <div class="icons">
+        <a href=""target="_blank"> <i class="ri-youtube-line"></i></a>
+        <a href="https://github.com/catalogador"target="_blank"> <i class="ri-github-line"></i></a>
+        <a href="https://www.linkedin.com/in/weslleypolo/" target="_blank"> <i class="ri-linkedin-box-line"></i></a>
+    </div>
+
+
+
+    <footer>
+        <a>Feito em CSS/JS/HTML Puro, disponivel no GitHub. </a>
+    </footer>
+
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let nav = document.querySelector('.nav-list');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('bx-x');
+            nav.classList.toggle('open');
+        }
+
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"> </script>
+    <script >
+        var typingEffect = new Typed(".multitext",{
+            strings: ["UX", "HTML","CSS","JavaScript","PYTHON","DESIGN"]
+            ,loop: true,
+            typeSpeed: 100,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
+
+</body>
+
+</html>
